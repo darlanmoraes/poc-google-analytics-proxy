@@ -6,7 +6,7 @@ You can just start with **Docker Compose**. The containers used will export all 
 ```sh
 ~/ cd kong-version
 ~/kong-version docker-compose -f docker-compose.yml build
-~/kong version docker-compose -g docker-compose.yml --force-recreate
+~/kong version docker-compose -g docker-compose.yml up --force-recreate
 ```
 
 After this step we need to register the **Google Analytics** *API* on **Kong**:
@@ -31,7 +31,7 @@ You can just start with **Docker Compose**. The container used will export only 
 ```sh
 ~/ cd node-version
 ~/node-version docker-compose -f docker-compose.yml build
-~/node version docker-compose -g docker-compose.yml --force-recreate
+~/node version docker-compose -g docker-compose.yml up --force-recreate
 ```
 
 Now it is possible to call **Google Analytics** through **Node** proxy:
