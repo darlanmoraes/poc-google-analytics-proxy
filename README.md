@@ -8,7 +8,7 @@ git clone https://github.com/darlanmoraes/poc-google-analytics-proxy.git
 cd poc-google-analytics-proxy
 cd kong-version
 docker-compose -f docker-compose.yml build
-docker-compose -f docker-compose.yml up --force-recreate
+docker-compose -f docker-compose.yml up
 ```
 
 After this step we need to register the **Google Analytics** *API* on **Kong**:
@@ -35,7 +35,7 @@ git clone https://github.com/darlanmoraes/poc-google-analytics-proxy.git
 cd poc-google-analytics-proxy
 cd node-version
 docker-compose -f docker-compose.yml build
-docker-compose -f docker-compose.yml up --force-recreate
+docker-compose -f docker-compose.yml up
 ```
 
 Now it is possible to call **Google Analytics** through **Node** proxy:
