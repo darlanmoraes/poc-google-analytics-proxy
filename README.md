@@ -34,7 +34,7 @@ You can just start with **Docker Compose**. The container used will export only 
 ~/node version docker-compose -g docker-compose.yml --force-recreate
 ```
 
-Now it is possible to call **Google Analytics** through *Node* proxy:
+Now it is possible to call **Google Analytics** through **Node** proxy:
 ```sh
 curl -v -X POST \
 -d 'v=1&tid=UA-102584845-1&cid=35009a79-1a05-49d7-b876-2b884d0f825b&t=pageview&dp=home' \
