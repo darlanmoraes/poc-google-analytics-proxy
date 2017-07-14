@@ -47,3 +47,16 @@ curl -v -X POST \
 
 ### How Can I Change The IP And User Agent? ###
 Using any of the alternatives listed above will make us see that the user agent and ip are both from our server, so we need to include **&uip(User IP Override)** and **&ua(User Agent Override)** on **Google Analytics** request, extracting them from proxy request.
+
+### Pros vs Cons ###
+|  | Kong | Node |
+| - | - | - |
+| Easy setup | * | * |
+| High scalability | ? | * |
+| Easy support to programmatic changes | ? (Lua) | * (Javascript) |
+| Support to all GA methods (without software development) | * | * |
+| Can easily use triggers before/after calling GA | ? | * |
+| Can be maintained by developers | x | * |
+| Requests can be authenticated easily | * | ? |
+| External clients can call | * | * |
+| Can be use to provide all data as free content | * | * |
