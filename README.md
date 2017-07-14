@@ -44,3 +44,6 @@ curl -v -X POST \
 -d 'v=1&tid=UA-102584845-1&cid=35009a79-1a05-49d7-b876-2b884d0f825b&t=pageview&dp=home' \
 'http://localhost:8000/collect'
 ```
+
+### How Can I Change The IP And User Agent? ###
+Using any of the alternatives listed above will make us see that the user agent and ip are both from our server, so we need to include **&uip(User IP Override)** and **&ua(User Agent Override)** on **Google Analytics** request, extracting them from proxy request.
