@@ -1,0 +1,22 @@
+version: "2"
+services:
+  kong:
+    image: "kong"
+    mem_limit: "1024m"
+    ports:
+      - "8080:8080"
+      - "8000:8000"
+      - "8443:8443"
+      - "8001:8001"
+      - "7946:7946"
+      - "7946:7946/udp"
+    environment:
+      KONG_PG_HOST: "kong_database"
+  kong_database:
+    image: "postgres:9.4"
+    mem_limit: "1024m"
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: "kong"
+      POSTGRES_DB: "kong"
